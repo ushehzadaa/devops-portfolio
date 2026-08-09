@@ -1,0 +1,8 @@
+services:
+  smartavtool:
+    build: .
+    image: smartavtool:v1
+    container_name: smartavtool-app
+    ports:
+      - "80:80"
+    restart: unless-stopped
